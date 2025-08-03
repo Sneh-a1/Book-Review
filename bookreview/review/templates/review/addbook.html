@@ -1,0 +1,20 @@
+{% extends 'review/base.html' %}
+
+{% block title %} Add Book {% endblock %}
+
+{% block hero %} 
+<h2> Add Your Fav Books Here</h2>
+{% endblock %}
+
+{% block content %}
+
+<div class="container me-5x">
+<form action ="" method="post" novalidate>
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit" value="Submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+
+{% endblock %}
+
