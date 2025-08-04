@@ -1,0 +1,17 @@
+{% extends 'review/base.html' %}
+
+{% block title %}
+Details 
+{% endblock %}
+
+{% block content %}
+<div class="container mt-4 me-5px ">
+   <h4> {{book.title}}</h4>
+  <div class="text mt-2 text-muted"> {{book.author}}</div>
+  <p class="text mt-4">  {{book.description}} </p>
+  <a href="{% url 'home' %}" type="button" class="btn btn-primary ">Back to List</a>
+
+</div>
+{% endblock content %}
+
+

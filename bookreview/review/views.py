@@ -1,4 +1,4 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import render,redirect,get_object_or_404
 from review.models import Book
 from review.forms import BookForm
 from django.contrib import messages
@@ -32,4 +32,6 @@ def addbook(request):
     return render(request,'review/addbook.html',{'form':form})
                     
 
-    
+def details(request,book_id):
+    book=get_object_or_404(Book,id=book_id)
+    return render(request,'review/details.html',{'book':book})
