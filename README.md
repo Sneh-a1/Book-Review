@@ -6,7 +6,8 @@ This is a simple Book-review project focused on implementing MVT ( Model View Te
 + can filter the books with respective genre.
 + Form to publish your book review
 
-  # Prerequisites #
+# Getting Started #
+  ## Prerequisites ##
   Python installed with django. You can install python through the [ official website ](https://www.python.org/downloads/)
 
 ## django Installation and program run ##
