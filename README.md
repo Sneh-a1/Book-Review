@@ -16,7 +16,7 @@ This is a simple Book-review project focused on implementing MVT ( Model View Te
 pip install django
 ```
 2.Run server:
-Inside the program file (/bookreview).
+Inside the program folder (/bookreview).
 ```
 python manage.py runserver
 ```
